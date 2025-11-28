@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyeux Anniversaire ⭐</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ciel étoilé</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="stars-container"></div>
-    <script src="script.js"></script>
+
+  <div id="container"></div>
+
+  <div id="heart-popup" class="hidden" aria-hidden="true">
+    <canvas id="pinkboard"></canvas>
+    <button id="close-heart">Fermer</button>
+  </div>
+
+  <div id="cake-popup" class="hidden" aria-hidden="true">
+    <canvas id="fireworks-canvas"></canvas>
+    <div id="birthday-cake">
+        <div class="cake">
+          <div class="middle"></div>
+          <div class="chocs"></div>
+          <div class="top"></div>
+        </div>
+        <div class="candles">
+          <div class="flame"></div>
+          <div class="flame2"></div>
+          <div class="flame3"></div>
+          <div class="shadows"></div>
+          <div class="text">Joyeux Anniversaire !</div>
+        </div>
+        <p class="text2">Clique pour souffler les bougies c: !</p>
+    </div>
+    <button id="close-cake">Fermer</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
